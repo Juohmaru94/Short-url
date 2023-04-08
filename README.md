@@ -2,16 +2,16 @@
 This is a simple web application that allows users to shorten their long URLs. It is built using HTML, CSS, and JavaScript, and it integrates with the Bitly API to generate short links.
 
 **Features**
-Shorten long URLs
-Copy the shortened link to the clipboard
-Display a warning message if an invalid URL is entered
-Display a success message once the shortened link is ready
+*Shorten long URLs
+*Copy the shortened link to the clipboard
+*Display a warning message if an invalid URL is entered
+*Display a success message once the shortened link is ready
 
 **Technologies Used**
-HTML
-CSS
-JavaScript
-Bitly API
+*HTML
+*CSS
+*JavaScript
+*Bitly API
 
 **Getting Started**
 To use this web application, follow these steps:
