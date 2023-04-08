@@ -22,7 +22,7 @@ To use this web application, follow these steps:
 4. Click the "Shorten" button
 5. If the URL is valid, the shortened link will be displayed along with a success message. If the URL is invalid, a warning message will be displayed.
 
-Alternatively, try out the app by visiting [makemeshort.netlify.app]
+Alternatively, try out the app by visiting *makemeshort.netlify.app*
 
 **Contributing**  
 If you would like to contribute to this project, please follow these steps:
