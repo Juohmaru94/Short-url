@@ -13,7 +13,7 @@ This is a simple web application that allows users to shorten their long URLs. I
 * JavaScript
 * Bitly API
 
-**Getting Started**
+**Getting Started**  
 To use this web application, follow these steps:
 
 1. Clone this repository to your local machine
@@ -24,7 +24,7 @@ To use this web application, follow these steps:
 
 Alternatively, try out the app by visiting the live site at [insert live site URL here].
 
-**Contributing**
+**Contributing**  
 If you would like to contribute to this project, please follow these steps:
 
 1. Fork this repository
