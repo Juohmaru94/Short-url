@@ -1,0 +1,26 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>URL Shortener</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <label class="heading" for="url-input">URL Shortener</label>
+      <input type="text" class="url-input" placeholder="Enter URL" />
+      <button type="button" class="submit-btn">Shrink me</button>
+      <div class="warning-message success-message hidden"></div>
+      <div class="short-url-container"></div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
