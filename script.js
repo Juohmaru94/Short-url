@@ -3,6 +3,7 @@ const urlInput = document.querySelector(".url-input");
 const submitBtn = document.querySelector(".submit-btn");
 const warningMessage = document.querySelector(".warning-message");
 const successMessage = document.querySelector(".success-message");
+const copyBtn = document.querySelector(".copy-btn");
 
 // Get the div element that will display the shortened URL
 const shortUrlContainer = document.querySelector(".short-url-container");
@@ -37,6 +38,7 @@ submitBtn.addEventListener("click", async (e) => {
     warningMessage.classList.remove("hidden");
     warningMessage.classList.remove("success-message");
     warningMessage.classList.add("warning-message");
+    copyBtn.classList.add("hidden");
     shortUrlContainer.style.display = "none";
     return;
   }
@@ -60,8 +62,24 @@ submitBtn.addEventListener("click", async (e) => {
   // Get the shortened URL from the response data
   const shortUrl = data.link;
 
+  // Make the short URL container visible
   // Update the contents of the short URL container with the shortened URL
   shortUrlContainer.style.display = "block";
-  // Make the short URL container visible
-  shortUrlContainer.textContent = shortUrl;
+  shortUrlContainer.textContent = shortUrl.slice(8);
+
+  copyBtn.classList.remove("hidden");
+  copyBtn.addEventListener("click", () => {
+    const shortUrl = document.querySelector(".short-url-container").textContent;
+    navigator.clipboard
+      .writeText(shortUrl)
+      .then(() => {
+        copyBtn.textContent = "Copied!";
+        setTimeout(() => {
+          copyBtn.textContent = "Copy";
+        }, 2000);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  });
 });

@@ -87,3 +87,20 @@ button {
 .hidden {
   display: none;
 }
+
+.copy-btn {
+  background-color: #000000;
+  color: white;
+  font-weight: 400;
+  margin-top: 2rem;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.copy-btn:hover {
+  background-color: #3a3a3a;
+}
